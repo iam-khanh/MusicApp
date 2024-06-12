@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/filemusic"
+        android:icon="@drawable/music"
+        android:title="File Music" />
+    <item
+        android:id="@+id/sync"
+        android:icon="@drawable/sync"
+        android:title="Sync" />
+    <item
+        android:id="@+id/trash"
+        android:icon="@drawable/delete"
+        android:title="Trash" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting"
+        android:title="Setting" />
+    <item android:title="profile">
+        <menu>
+            <item
+                android:id="@+id/login"
+                android:icon="@drawable/login"
+                android:title="Login" />
+        </menu>
+
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/rate"
+                android:title="Rate Us" />
+        </menu>
+
+    </item>
+
+</menu>
