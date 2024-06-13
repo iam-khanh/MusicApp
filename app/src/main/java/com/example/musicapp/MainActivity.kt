@@ -31,12 +31,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Khai báo
         mb = MediaPlayer.create(this, R.raw.cogaiphuongxa)
         drawerToggle = findViewById(R.id.main)
         toggle = ActionBarDrawerToggle(this, drawerToggle, R.string.open, R.string.close)
         navView = findViewById(R.id.nav_view)
 
-
+        // Lắng nghe sk btnplay
         binding.btnplay.setOnClickListener {
             if(mb.isPlaying){
                 mb.pause()
@@ -68,6 +69,7 @@ class MainActivity : AppCompatActivity() {
                 binding.txtend.text = "$endtime"
             }
         }
+
         Thread(Runnable {
             while (true){
                 try {
@@ -81,6 +83,7 @@ class MainActivity : AppCompatActivity() {
             }
         }).start()
 
+        // code menu
         drawerToggle.addDrawerListener(toggle)
         toggle.syncState()
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
